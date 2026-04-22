@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ทีมงานมืออาชีพ | หจก. กนกวรรณ ทับทอง</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* เพิ่มเพื่อจัดระเบียบข้อความข้างในถ้ายังไม่มีรูป */
+.photo-box h4, .photo-box span { 
+  width: 100%; text-align: center; display: block; 
+}
+:root {
+  --green-dark: #004d2a;
+  --green-main: #006738;
+  --gold: #c5a059;
+  --light-bg: #f8fbf9;
+}
+
+body { margin: 0; font-family: 'Prompt', sans-serif; background: var(--light-bg); color: #333; }
+.container { max-width: 1200px; margin: auto; padding: 60px 20px; }
+
+/* Section Header */
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-header h2 { font-size: 36px; color: var(--green-main); margin: 0; }
+.section-header p { color: #666; margin: 10px 0; }
+.section-header .line { width: 50px; height: 4px; background: var(--gold); margin: 20px auto; }
+
+/* Org Chart Structure */
+.org-container { display: flex; flex-direction: column; align-items: center; gap: 40px; }
+
+/* Card Style */
+.staff-card {
+  background: white;
+  border-radius: 20px;
+  width: 220px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+.staff-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+
+/* Photo Placeholder */
+.photo-box {
+  width: 110px;
+  height: 110px;
+  background: #eee;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 12px;
+}
+.photo-box img { width: 100%; height: 100%; object-fit: cover; }
+
+.role { font-size: 11px; color: var(--gold); font-weight: 600; text-transform: uppercase; display: block; margin-bottom: 8px; letter-spacing: 1px; }
+.name { font-size: 17px; font-weight: 600; color: var(--green-dark); margin: 0; }
+.desc { font-size: 13px; color: #888; margin-top: 6px; line-height: 1.4; }
+
+/* Department Grouping */
+.dept-title {
+  background: var(--green-main);
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 50px 0 30px;
+  box-shadow: 0 4px 15px rgba(0,103,56,0.2);
+}
+
+.flex-row { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 25px; 
+  width: 100%; 
+}
+
+/* Highlight for CEO */
+.ceo-card { width: 300px; border: 2px solid var(--gold); }
+.ceo-card .photo-box { width: 140px; height: 140px; }
+
+</style>
+</head>
+<body>
+
+<section class="container">
+  <div class="section-header">
+    <h2>โครงสร้างองค์กรของเรา</h2>
+    <p>ห้างหุ้นส่วนจำกัด กนกวรรณ ทับทอง</p>
+    <div class="line"></div>
+  </div>
+
+  <div class="org-container">
+    
+    <div class="flex-row">
+      <div class="staff-card">
+        <div class="photo-box"><img src="apa.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Honorary Advisor</span>
+        <p class="name">ที่ปรึกษากิตติมศักดิ์</p>
+	<p class="desc">สมเกียรติ เปาอินทร์</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="toyi.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Honorary Advisor</span>
+        <p class="name">ที่ปรึกษากิตติมศักดิ์</p>
+	<p class="desc">กนกวรรณ ทับทอง</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="chok.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Honorary Advisor</span>
+        <p class="name">ที่ปรึกษากิตติมศักดิ์</p>
+	<p class="desc">สิทธิโชค เปาอินทร์</p>
+      </div>
+    </div>
+
+    <div class="staff-card ceo-card">
+      <div class="photo-box"><img src="tik.jpg" alt="General & Sales Manager"></div>
+      <span class="role">Managing Partner</span>
+      <p class="name" style="font-size: 22px;">หุ้นส่วนผู้จัดการ</p>
+      <p class="desc">ชนัญญา ตรีภาค</p>
+    </div>
+
+    <div class="dept-title">ฝ่ายการจัดการและทรัพยากร</div>
+    <div class="flex-row">
+      <div class="staff-card">
+        <div class="photo-box"><img src="dow.jpg" alt="General & Sales Manager"></div>
+        <span class="role">General & Sales Manager</span>
+        <p class="name">ผู้จัดการทั่วไป/ฝ่ายขาย</p>
+	<p class="desc">นภาพร วงค์เขียว</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="yui.jpg" alt="General & Sales Manager"></div>
+        <span class="role">HR & Accounting Manager</span>
+        <p class="name">ผู้จัดการฝ่ายบุคคล/ฝ่ายบัญชี</p>
+	<p class="desc">วรพรรณ สุขเกษม</p>
+      </div>
+    </div>
+
+    <div class="dept-title">ฝ่ายการตลาดและประชาสัมพันธ์</div>
+    <div class="flex-row">
+      <div class="staff-card">
+        <div class="photo-box"><img src="chap.jpg" alt="Marketing Manager"></div>
+        <span class="role">Marketing Manager</span>
+        <p class="name">ผู้จัดการฝ่ายการตลาดฯ</p>
+	<p class="desc">ณัฐสิทธิ์ เปาอินทร์</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="paul.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Deputy Marketing</span>
+        <p class="name">ผู้ช่วยผู้จัดการฝ่ายการตลาดฯ</p>
+	<p class="desc">ปรเมศร์ จันทา</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="japan.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Media Content</span>
+        <p class="name">เจ้าหน้าที่ผลิตสื่อออนไลน์</p>
+	<p class="desc">ปริศนา คำศรีไพร</p>
+      </div>
+    </div>
+
+    <div class="dept-title">ฝ่ายงานสั่งทำพิเศษ</div>
+    <div class="flex-row">
+      <div class="staff-card">
+        <div class="photo-box"><img src="nok.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Special Order Head</span>
+        <p class="name">หัวหน้าฝ่ายงานสั่งทำพิเศษ</p>
+	<p class="desc">กฤษณา เพ็ญเขตกิจ</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="fah.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Custom order officer</span>
+        <p class="name">เจ้าหน้าที่รับงานสั่งทำ</p>
+	<p class="desc">วนิดา ม่วนน้อย</p>
+      </div>
+	<div class="staff-card">
+        <div class="photo-box"><img src="aoy.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Graphics Officer</span>
+        <p class="name">เจ้าหน้าที่ออกแบบกราฟิก</p>
+        <p class="desc">ไพโรจน์ รอดนิยม</p>
+      </div>
+	  <div class="staff-card">
+        <div class="photo-box"><img src="mai.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Screen Specialist</span>
+        <p class="name">เจ้าหน้าที่งานพิมพ์ผ้า</p>
+	<p class="desc">พีรพงศ์ ปัญญาฤทธิ์</p>
+      </div>
+    </div>
+
+    <div class="dept-title">ฝ่ายงานปักคอมพิวเตอร์</div>
+    <div class="flex-row">
+      <div class="staff-card">
+        <div class="photo-box"><img src="kan.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Head of Embroidery Production</span>
+        <p class="name">หัวหน้าฝ่ายผลิตงานปัก</p>
+	<p class="desc">สายชล ทับแจ่ม</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="may.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Deputy Head of Embroidery Production</span>
+        <p class="name">รองหัวหน้าฝ่ายผลิตงานปัก</p>
+	<p class="desc">วลัยรัตน์ ดีอินทร์</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="doww.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Embroidery Production Staff</span>
+        <p class="name">เจ้าหน้าที่ฝ่ายผลิตงานปัก</p>
+	<p class="desc">นัฐพร แต่งงาม</p>
+      </div>
+    </div>
+
+    <div class="dept-title">ฝ่ายผลิตงานเย็บ</div>
+    <div class="flex-row">
+      <div class="staff-card">
+        <div class="photo-box"><img src="jan.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Production Head</span>
+        <p class="name">หัวหน้าฝ่ายผลิตงานเย็บ</p>
+	<p class="desc">จันจีรา คชสิทธิ์</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="pu.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Deputy Head of Sewing Production</span>
+        <p class="name">รองหัวหน้าฝ่ายผลิตงานเย็บ</p>
+        <p class="desc">สโรชา ศรีมาลา</p>
+      </div>
+      <div class="staff-card">
+        <div class="photo-box"><img src="lita.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Sewing Production Officer</span>
+        <p class="name">เจ้าหน้าที่ฝ่ายผลิตงานเย็บ</p>
+	<p class="desc">สิตา ชื่นใจ</p>
+      </div>
+    </div>
+<div class="dept-title">ฝ่ายการจัดส่ง</div>
+    <div class="flex-row">
+            <div class="staff-card">
+        <div class="photo-box"><img src="jeap.jpg" alt="General & Sales Manager"></div>
+        <span class="role">Transportation Officer/Senior Consultant</span>
+        <p class="name">เจ้าหน้าที่ขนส่ง/ที่ปรึกษาอาวุโส</p>
+	<p class="desc">วิเชษฐ์ แสงสร้อย</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+</body>
+</html>
