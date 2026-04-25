@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>ทีมงานมืออาชีพ | หจก. กนกวรรณ ทับทอง</title>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+<meta name="description" content="หจก.กนกวรรณ ทับทอง ร้านเสื้อผ้านครสวรรค์ จำหน่ายชุดนักเรียน ชุดข้าราชการปกติขาว ชุดครู รับสั่งตัดเสื้อ ไม่มีขั้นต่ำ">
+<meta name="keywords" content="ร้านเสื้อ นครสวรรค์, ชุดนักเรียน, ชุดข้าราชการปกติขาว, ชุดครู, รับสั่งตัดเสื้อ">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -25,6 +28,112 @@ body {
   color: #333;
 }
 
+	/* ===== Header ===== */
+header{
+  background:#fff;
+  border-bottom:4px solid var(--green-main);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.header-inner{
+  max-width:1100px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.header-inner img{height:70px;}
+
+header h1{
+  margin:0;
+  color:var(--green-main);
+  font-size:26px;
+}
+
+header p{margin:4px 0 0;color:#555;}
+
+nav{
+  background:var(--green-main);
+  padding:10px;
+  text-align:center;
+}
+
+nav a{
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+nav a:hover{opacity:.85;}
+
+/* ===== Dropdown ===== */
+.dropdown{position:relative;display:inline-block;}
+
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  top:36px;
+  left:0;
+  background:#fff;
+  min-width:260px;
+  box-shadow:0 6px 20px rgba(0,0,0,.15);
+  border-radius:10px;
+  overflow:hidden;
+  z-index:2000;
+  text-align:left;
+}
+
+.dropdown-menu a{
+  display:block;
+  padding:12px 16px;
+  color:#333;
+  text-decoration:none;
+}
+
+.dropdown-menu a:hover{background:var(--green-light);}
+.dropdown:hover .dropdown-menu{display:block;}
+
+/* ===== Marquee ===== */
+.marquee-box{
+  background:var(--green-light);
+  overflow:hidden;
+  padding:10px 0;
+}
+
+.marquee-track{
+  display:flex;
+  width:max-content;              /* ⭐ สำคัญมาก */
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track span{
+  font-weight:bold;
+  font-size:18px;
+  color:var(--green-main);         /* ⭐ แก้สีดำ */
+  padding-right:60px;
+  white-space:nowrap;
+}
+
+@keyframes marquee{
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== Footer ===== */
+footer{
+  background:var(--green-main);
+  color:#fff;
+  text-align:center;
+  padding:22px;
+}
+
+	
 .container { max-width: 1200px; margin: auto; padding: 80px 20px; }
 
 /* Section Header */
