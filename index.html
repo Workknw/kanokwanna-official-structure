@@ -37,6 +37,42 @@ body {
   margin: 25px auto; border-radius: 2px;
 }
 
+	/* --- Vision Section --- */
+        .vision-container {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 80px auto;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            border-top: 4px solid var(--gold);
+        }
+        .vision-container h3 { color: var(--green-dark); font-size: 24px; margin-bottom: 15px; }
+        .vision-container p { color: #555; font-size: 17px; font-weight: 300; margin: 0; }
+
+/* KNWT Core Values */
+.knwt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+}
+.knwt-item {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+.knwt-item:hover { transform: translateY(-5px); border-color: var(--gold); }
+.knwt-letter { font-size: 40px; font-weight: 600; color: var(--gold); display: block; margin-bottom: 10px; }
+.knwt-title { font-size: 18px; font-weight: 600; color: var(--green-dark); display: block; margin-bottom: 8px; }
+.knwt-desc { font-size: 14px; color: #666; font-weight: 300; line-height: 1.5; }
+
+	
 /* Department Titles */
 .dept-title {
   margin-top: 80px;
@@ -119,6 +155,37 @@ body {
     <p>ห้างหุ้นส่วนจำกัด กนกวรรณ ทับทอง</p>
     <div class="line"></div>
   </div>
+
+	<div class="vision-container">
+    <h3>วิสัยทัศน์ (Vision)</h3>
+    <p>“ยกระดับงานยูนิฟอร์มสู่มาตรฐานมืออาชีพ พร้อมขับเคลื่อนธุรกิจอย่างรับผิดชอบต่อสังคมและสิ่งแวดล้อม”</p><br>
+    <span class="concept-tagline" style="color: var(--green-main);"><strong>"ถักทอด้วยความประณีต ส่งต่อด้วยหัวใจ เพื่อเราทุกคน"</strong></span>
+  </div>
+
+
+    <div class="knwt-grid">
+    <div class="knwt-item">
+      <span class="knwt-letter">K</span>
+      <span class="knwt-title">Kind-hearted</span>
+      <p class="knwt-desc">จิตใจที่เอื้อเฟื้อ พร้อมช่วยเหลือและบริจาคเพื่อชุมชน</p>
+    </div>
+    <div class="knwt-item">
+      <span class="knwt-letter">N</span>
+      <span class="knwt-title">Nature-friendly</span>
+      <p class="knwt-desc">การดำเนินธุรกิจที่ใส่ใจและรักษาสิ่งแวดล้อม</p>
+    </div>
+    <div class="knwt-item">
+      <span class="knwt-letter">W</span>
+      <span class="knwt-title">Well-crafted</span>
+      <p class="knwt-desc">งานฝีมือที่ประณีตเปี่ยมด้วยคุณภาพในทุกขั้นตอน</p>
+    </div>
+    <div class="knwt-item">
+      <span class="knwt-letter">T</span>
+      <span class="knwt-title">Togetherness</span>
+      <p class="knwt-desc">การเติบโตไปพร้อมกับลูกค้าและสังคมอย่างยั่งยืน</p>
+    </div>
+  </div>
+
 
   <div class="org-container">
 
