@@ -41,7 +41,11 @@ body { margin: 0; font-family: 'Prompt', sans-serif; background: var(--light-bg)
   border: 1px solid rgba(0,0,0,0.03);
   transition: all 0.3s ease;
 }
-.staff-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+.staff-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--gold); /* เพิ่มบรรทัดนี้ */
+  box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15); /* เงาสีทองจางๆ */
+}
 
 /* Photo Placeholder */
 .photo-box {
